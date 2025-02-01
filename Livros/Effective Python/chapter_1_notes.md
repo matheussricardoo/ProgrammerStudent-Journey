@@ -1,1 +1,0 @@
-Preciso refatorar ele 
