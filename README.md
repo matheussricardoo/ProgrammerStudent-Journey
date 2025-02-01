@@ -1,13 +1,13 @@
 <div align="center">
 
-<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=2E8B57&height=200&section=header&text=Python%20Students&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=40&desc=Learning%20Python%20&%20AI%20from%20scratch&descAlignY=60&descSize=18">
+<img width="100%" src="https://capsule-render.vercel.app/api?type=waving&color=2E8B57&height=200&section=header&text=Programmer%20Student%20Journey&fontSize=50&fontColor=fff&animation=twinkling&fontAlignY=40&desc=Documenting%20my%20learning%20path%20in%20programming!&descAlignY=60&descSize=18">
 
 <p align="center">
-  <i>📚 A roadmap for my studies in Python, Data Science, Machine Learning, and AI. Documenting books, projects, and coding challenges!</i>
+  <i>🚀 A roadmap for my journey in programming, covering multiple languages, Data Science, Machine Learning, AI, and more! Documenting books, projects, and coding challenges.</i>
 </p>
 
 <p align="center">
-  <i>📚 Um roadmap para meus estudos em Python, Ciência de Dados, Machine Learning e IA. Documentando livros, projetos e desafios de programação!</i>
+  <i>🚀 Um roadmap para minha jornada na programação, abrangendo várias linguagens, Ciência de Dados, Machine Learning, IA e mais! Documentando livros, projetos e desafios de programação.</i>
 </p>
 
 ---
@@ -23,5 +23,6 @@
 | 📝 | Projects | Projetos práticos |
 | 💻 | Code Challenges | Desafios de código |
 | 📰 | Interesting Articles | Artigos interessantes |
+| 🛠️ | Multiple Programming Languages | Diversas Linguagens de Programação |
 
 </div>
