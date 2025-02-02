@@ -76,3 +76,5 @@ print(repr(p))  # → "Person(name='Alice', age=30)"
 - **`repr`** → Desenvolvedor.
 
 - Use `__repr__` para depuração e `__str__` para saídas visuais.
+
+Para mais detalhes, consulte o **Item 12** do _Effective Python_ (3ª Edição) .
