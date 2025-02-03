@@ -56,4 +56,4 @@ Agora é sua vez! Escolha um dos desafios e comece a programar. 😃🎮
 
 ---
 
-Todas as minhas soluções estão na pasta Example
+Todas as minhas soluções estão na pasta [Examples](../Examples/)
