@@ -109,5 +109,3 @@ def get_usuario():
 ✔ Usa estrutura de **chave: valor**, suportando tipos como strings, números e listas.  
 ✔ Pode ser manipulado facilmente em **Python** usando o módulo `json`.  
 ✔ É o formato padrão de comunicação em **APIs**, incluindo **FastAPI**.
-
-🚀 JSON é essencial no desenvolvimento moderno! Se precisar de mais explicações, só perguntar. 😊
