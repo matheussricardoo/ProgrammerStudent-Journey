@@ -56,8 +56,46 @@ def test_update_user(client):
     }
 
 
+def test_get_unique_resource_200(client):
+    response = client.get('/users/1')
+
+    assert response.status_code == HTTPStatus.OK
+    assert response.json() == {
+        'username': 'bob',
+        'email': 'bob@example.com',
+        'id': 1,
+    }
+
+
 def test_delete_user(client):
     response = client.delete('/users/1')
 
     assert response.status_code == HTTPStatus.OK
     assert response.json() == {'message': 'User deleted'}
+
+
+def test_update_error404(client):
+    response = client.put(
+        '/users/5',
+        json={
+            'username': 'Matheus',
+            'email': 'matheus@example.com',
+            'password': 'amopython',
+        },
+    )
+    assert response.status_code == HTTPStatus.NOT_FOUND
+    assert response.json() == {'detail': 'User not found'}
+
+
+def test_delete_error404(client):
+    response = client.delete('/users/5')
+
+    assert response.status_code == HTTPStatus.NOT_FOUND
+    assert response.json() == {'detail': 'User not found'}
+
+
+def test_get_unique_resource_404(client):
+    response = client.get('/users/5')
+
+    assert response.status_code == HTTPStatus.NOT_FOUND
+    assert response.json() == {'detail': 'User not found'}
