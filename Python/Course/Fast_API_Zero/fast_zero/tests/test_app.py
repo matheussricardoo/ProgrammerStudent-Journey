@@ -27,6 +27,34 @@ def test_create_user(client):
     }
 
 
+def test_create_user_400_user_use(client, user):
+    response = client.post(
+        '/users/',
+        json={
+            'username': user.username,
+            'email': 'alice@example.com',
+            'password': 'secret',
+        },
+    )
+
+    assert response.status_code == HTTPStatus.BAD_REQUEST
+    assert response.json() == {'detail': 'Username already exists'}
+
+
+def test_create_user_400_email_use(client, user):
+    response = client.post(
+        '/users/',
+        json={
+            'username': 'alice',
+            'email': user.email,
+            'password': 'secret',
+        },
+    )
+
+    assert response.status_code == HTTPStatus.BAD_REQUEST
+    assert response.json() == {'detail': 'Email already exists'}
+
+
 def test_read_users(client):
     response = client.get('/users')
     assert response.status_code == HTTPStatus.OK
@@ -83,17 +111,6 @@ def test_update_integrity_error(client, user):
     }
 
 
-# def test_get_unique_resource_200(client):
-#     response = client.get('/users/1')
-
-#     assert response.status_code == HTTPStatus.OK
-#     assert response.json() == {
-#         'username': 'bob',
-#         'email': 'bob@example.com',
-#         'id': 1,
-#     }
-
-
 def test_delete_user(client, user):
     response = client.delete('/users/1')
 
@@ -101,28 +118,39 @@ def test_delete_user(client, user):
     assert response.json() == {'message': 'User deleted'}
 
 
-# def test_update_error404(client):
-#     response = client.put(
-#         '/users/5',
-#         json={
-#             'username': 'Matheus',
-#             'email': 'matheus@example.com',
-#             'password': 'amopython',
-#         },
-#     )
-#     assert response.status_code == HTTPStatus.NOT_FOUND
-#     assert response.json() == {'detail': 'User not found'}
+def test_update_error404(client):
+    response = client.put(
+        '/users/5',
+        json={
+            'username': 'Matheus',
+            'email': 'matheus@example.com',
+            'password': 'amopython',
+        },
+    )
+    assert response.status_code == HTTPStatus.NOT_FOUND
+    assert response.json() == {'detail': 'User not found'}
 
 
-# def test_delete_error404(client):
-#     response = client.delete('/users/5')
+def test_delete_error404(client):
+    response = client.delete('/users/5')
 
-#     assert response.status_code == HTTPStatus.NOT_FOUND
-#     assert response.json() == {'detail': 'User not found'}
+    assert response.status_code == HTTPStatus.NOT_FOUND
+    assert response.json() == {'detail': 'User not found'}
 
 
-# def test_get_unique_resource_404(client):
-#     response = client.get('/users/5')
+def test_get_unique_resource_404(client):
+    response = client.get('/users/5')
 
-#     assert response.status_code == HTTPStatus.NOT_FOUND
-#     assert response.json() == {'detail': 'User not found'}
+    assert response.status_code == HTTPStatus.NOT_FOUND
+    assert response.json() == {'detail': 'User not found'}
+
+
+def test_get_unique_resource_200(client, user):
+    response = client.get(f'/users/{user.id}')
+
+    assert response.status_code == HTTPStatus.OK
+    assert response.json() == {
+        'username': user.username,
+        'email': user.email,
+        'id': user.id,
+    }
