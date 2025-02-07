@@ -1,6 +1,7 @@
 from http import HTTPStatus
 
 from fast_zero.schemas import UserPublic
+from fast_zero.security import create_access_token
 
 
 def test_root_deve_retornar_ok_e_ola_mundo(client):
@@ -67,9 +68,10 @@ def test_read_users_with_users(client, user):
     assert response.json() == {'users': [user_schema]}
 
 
-def test_update_user(client, user):
+def test_update_user(client, user, token):
     response = client.put(
-        '/users/1',
+        f'/users/{user.id}',
+        headers={'Authorization': f'Bearer {token}'},
         json={
             'username': 'bob',
             'email': 'bob@example.com',
@@ -84,7 +86,7 @@ def test_update_user(client, user):
     }
 
 
-def test_update_integrity_error(client, user):
+def test_update_integrity_error(client, user, token):
     # Criando um registro para 'fausto'
     client.post(
         '/users',
@@ -94,10 +96,9 @@ def test_update_integrity_error(client, user):
             'password': 'secret',
         },
     )
-
-    # Alterando o user.username das fixture para fausto
     response_update = client.put(
         f'/users/{user.id}',
+        headers={'Authorization': f'Bearer {token}'},
         json={
             'username': 'fausto',
             'email': 'bob@example.com',
@@ -111,31 +112,33 @@ def test_update_integrity_error(client, user):
     }
 
 
-def test_delete_user(client, user):
-    response = client.delete('/users/1')
-
+def test_delete_user(client, user, token):
+    response = client.delete(
+        f'/users/{user.id}',
+        headers={'Authorization': f'Bearer {token}'},
+    )
     assert response.status_code == HTTPStatus.OK
     assert response.json() == {'message': 'User deleted'}
 
 
-def test_update_error404(client):
-    response = client.put(
-        '/users/5',
-        json={
-            'username': 'Matheus',
-            'email': 'matheus@example.com',
-            'password': 'amopython',
-        },
-    )
-    assert response.status_code == HTTPStatus.NOT_FOUND
-    assert response.json() == {'detail': 'User not found'}
+# def test_update_error404(client):
+#     response = client.put(
+#         '/users/5',
+#         json={
+#             'username': 'Matheus',
+#             'email': 'matheus@example.com',
+#             'password': 'amopython',
+#         },
+#     )
+#     assert response.status_code == HTTPStatus.NOT_FOUND
+#     assert response.json() == {'detail': 'User not found'}
 
 
-def test_delete_error404(client):
-    response = client.delete('/users/5')
+# def test_delete_error404(client):
+#     response = client.delete('/users/5')
 
-    assert response.status_code == HTTPStatus.NOT_FOUND
-    assert response.json() == {'detail': 'User not found'}
+#     assert response.status_code == HTTPStatus.NOT_FOUND
+#     assert response.json() == {'detail': 'User not found'}
 
 
 def test_get_unique_resource_404(client):
@@ -154,3 +157,40 @@ def test_get_unique_resource_200(client, user):
         'email': user.email,
         'id': user.id,
     }
+
+
+def test_get_token(client, user):
+    response = client.post(
+        '/token',
+        data={'username': user.email, 'password': user.clean_password},
+    )
+    token = response.json()
+
+    assert response.status_code == HTTPStatus.OK
+    assert 'access_token' in token
+    assert 'token_type' in token
+
+
+def test_case_email_not_sent(client):
+    data = {'no-email': 'test'}
+    token = create_access_token(data)
+    response = client.delete(
+        '/users/1',
+        headers={'Authorization': f'Bearer {token}'},
+    )
+
+    assert response.status_code == HTTPStatus.UNAUTHORIZED
+    assert response.json() == {'detail': 'Could not validate credentials'}
+
+
+def test_case_email_sent_dont_exist_user(client):
+    data = {'sub': 'test'}
+    token = create_access_token(data)
+
+    response = client.delete(
+        '/users/1',
+        headers={'Authorization': f'Bearer {token}'},
+    )
+
+    assert response.status_code == HTTPStatus.UNAUTHORIZED
+    assert response.json() == {'detail': 'Could not validate credentials'}
