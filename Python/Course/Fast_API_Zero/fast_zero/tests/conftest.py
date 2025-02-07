@@ -80,7 +80,7 @@ def _mock_db_time(*, model, time=datetime(2025, 2, 5)):
 @pytest.fixture
 def token(client, user):
     response = client.post(
-        '/token',
+        '/auth/token',
         data={'username': user.email, 'password': user.clean_password},
     )
     return response.json()['access_token']

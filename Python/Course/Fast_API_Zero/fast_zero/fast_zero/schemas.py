@@ -31,3 +31,8 @@ class UserUpdate(BaseModel):
     username: str | None = None
     email: str | None = None
     password: str | None = None
+
+
+class FilterPage(BaseModel):
+    offset: int = 0
+    limit: int = 100
