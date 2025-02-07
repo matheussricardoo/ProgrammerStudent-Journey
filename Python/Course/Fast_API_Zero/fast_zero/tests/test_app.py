@@ -1,7 +1,7 @@
 from http import HTTPStatus
 
 from fast_zero.schemas import UserPublic
-from fast_zero.security import create_access_token
+from fast_zero.security import create_access_token, verify_password
 
 
 def test_root_deve_retornar_ok_e_ola_mundo(client):
@@ -121,26 +121,6 @@ def test_delete_user(client, user, token):
     assert response.json() == {'message': 'User deleted'}
 
 
-# def test_update_error404(client):
-#     response = client.put(
-#         '/users/5',
-#         json={
-#             'username': 'Matheus',
-#             'email': 'matheus@example.com',
-#             'password': 'amopython',
-#         },
-#     )
-#     assert response.status_code == HTTPStatus.NOT_FOUND
-#     assert response.json() == {'detail': 'User not found'}
-
-
-# def test_delete_error404(client):
-#     response = client.delete('/users/5')
-
-#     assert response.status_code == HTTPStatus.NOT_FOUND
-#     assert response.json() == {'detail': 'User not found'}
-
-
 def test_get_unique_resource_404(client):
     response = client.get('/users/5')
 
@@ -194,3 +174,92 @@ def test_case_email_sent_dont_exist_user(client):
 
     assert response.status_code == HTTPStatus.UNAUTHORIZED
     assert response.json() == {'detail': 'Could not validate credentials'}
+
+
+def test_delete_user_success(client, user, token):
+    response = client.delete(
+        f'/users/{user.id}', headers={'Authorization': f'Bearer {token}'}
+    )
+    assert response.status_code == HTTPStatus.OK
+    assert response.json() == {'message': 'User deleted'}
+
+    response = client.get(f'/users/{user.id}')
+    assert response.status_code == HTTPStatus.NOT_FOUND
+
+
+def test_delete_other_user_forbidden(client, another_user, token):
+    response = client.delete(
+        f'/users/{another_user.id}',
+        headers={'Authorization': f'Bearer {token}'},
+    )
+    assert response.status_code == HTTPStatus.FORBIDDEN
+    assert response.json()['detail'] == 'Not enouh permissions'
+
+
+def test_update_user_conflict(client, user, another_user, token):
+    response = client.put(
+        f'/users/{user.id}',
+        json={
+            'username': another_user.username,
+            'email': user.email,
+            'password': 'newpassword',
+        },
+        headers={'Authorization': f'Bearer {token}'},
+    )
+    assert response.status_code == HTTPStatus.CONFLICT
+
+
+def test_partial_update(client, user, token):
+    response = client.put(
+        f'/users/{user.id}',
+        json={'email': 'new@email.com'},
+        headers={'Authorization': f'Bearer {token}'},
+    )
+    assert response.status_code == HTTPStatus.OK
+    assert response.json()['email'] == 'new@email.com'
+
+
+def test_login_invalid_password(client, user):
+    response = client.post(
+        '/token', data={'username': user.email, 'password': 'wrong'}
+    )
+    assert response.status_code == HTTPStatus.BAD_REQUEST
+    assert response.json()['detail'] == 'Incorrect email or password'
+
+
+def test_login_invalid_email(client):
+    response = client.post(
+        '/token', data={'username': 'invalid@email.com', 'password': 'any'}
+    )
+    assert response.status_code == HTTPStatus.BAD_REQUEST
+
+
+def test_update_password(client, user, token, session):
+    new_password = 'newpass123'
+
+    response = client.put(
+        f'/users/{user.id}',
+        json={'password': new_password},
+        headers={'Authorization': f'Bearer {token}'},
+    )
+    assert response.status_code == HTTPStatus.OK
+
+    session.refresh(user)
+
+    assert verify_password(new_password, user.password)
+
+    assert not verify_password('testtest', user.password)
+
+
+def test_update_other_user(client, user, another_user, token):
+    response = client.put(
+        f'/users/{another_user.id}',
+        json={
+            'username': 'hacker',
+            'email': 'hacker@test.com',
+            'password': 'hack',
+        },
+        headers={'Authorization': f'Bearer {token}'},
+    )
+    assert response.status_code == HTTPStatus.FORBIDDEN
+    assert response.json()['detail'] == 'Not enough permissions'
