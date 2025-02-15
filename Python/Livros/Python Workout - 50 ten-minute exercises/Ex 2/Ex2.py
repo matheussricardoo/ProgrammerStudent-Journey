@@ -3,5 +3,6 @@ def mysum(lista):
     for i in lista:
         soma += i
     print(soma)
-    
-mysum([15,15])
+
+
+mysum([15, 15])
