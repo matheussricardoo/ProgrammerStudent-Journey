@@ -80,8 +80,7 @@
               "title": "File Tree"
             }
           }
-        ],
-        "currentTab": 3
+        ]
       }
     ],
     "direction": "horizontal",
@@ -170,9 +169,17 @@
       "daily-notes:Abrir a nota de hoje": false,
       "templates:Inserir modelo": false,
       "command-palette:Abrir paleta de comandos": false,
-      "file-tree-alternative:File Tree Alternative Plugin": false
+      "file-tree-alternative:File Tree Alternative Plugin": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "f73ce6556a3ba119",
-  "lastOpenFiles": []
+  "active": "25d72cdb46cab5b5",
+  "lastOpenFiles": [
+    "Config",
+    "Books/Algoritmos - Teoria e Prática/Cap 1/Exercícios.md",
+    "Books/Algoritmos - Teoria e Prática/Cap 1/Cap 1.md",
+    "Books/Algoritmos - Teoria e Prática/Cap 1",
+    "Books/Algoritmos - Teoria e Prática",
+    "Books"
+  ]
 }
