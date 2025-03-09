@@ -17,3 +17,33 @@
 **1.1-5 Mostre um problema real no qual apenas a melhor solução servirá. Em seguida, apresente um problema em que baste uma solução que seja “aproximadamente” a melhor.**
 
 **R:** Um exemplo de problema que exige a melhor solução é o problema do caixeiro-viajante, onde qualquer desvio da rota ótima pode aumentar significativamente os custos de transporte. Já um exemplo de problema que aceita uma solução aproximada é a recomendação de produtos em um site de e-commerce, onde uma aproximação razoável já é suficiente para gerar sugestões úteis.
+
+---
+1.2-1 **Cite um exemplo de aplicação que exige conteúdo algorítmico no nível da aplicação e discuta a função dos algoritmos envolvidos.**
+
+**R:** Um exemplo clássico de aplicação que exige conteúdo algorítmico no nível da aplicação é o **roteamento em redes de computadores** .
+
+**Função dos algoritmos envolvidos:**
+
+- Em uma rede de computadores, os pacotes de dados precisam ser enviados do remetente ao destinatário através de várias rotas possíveis. Para determinar a rota mais eficiente, são usados algoritmos como o **[[Algoritmo de Dijkstra]]** ou o **[[Algoritmo de Bellman-Ford]]** .
+- Esses algoritmos calculam o caminho mais curto (em termos de distância, tempo ou custo) entre dois pontos na rede, considerando as conexões disponíveis (arestas) e seus pesos (como latência ou largura de banda).
+- A escolha do algoritmo depende das características da rede, como se há ciclos negativos ou se a rede é dinâmica (muda com o tempo).
+
+**Importância dos algoritmos:**
+
+- Sem algoritmos eficientes, o roteamento seria ineficiente, levando a congestionamentos, tempos de resposta lentos e perda de pacotes.
+- Os algoritmos garantem que os dados cheguem ao destino de forma rápida e confiável, mesmo em redes complexas e dinâmicas.
+
+1.2-2 **Suponha que estamos comparando implementações de ordenação por inserção e ordenação por intercalação na mesma máquina. Para entradas de tamanho n, a ordenação por inserção é executada em 8n2 passos, enquanto a ordenação por intercalação é executada em 64n lg n passos. Para quais valores de n a ordenação por inserção supera a ordenação por intercalação?**
+
+**R:** n < 128
+
+1.2-3 **Qual é o menor valor de n tal que um algoritmo cujo tempo de execução é 100n2 funciona mais rapidamente que um algoritmo cujo tempo de execução é 2n na mesma máquina?**
+
+**R:** n = 15
+
+---
+
+
+
+

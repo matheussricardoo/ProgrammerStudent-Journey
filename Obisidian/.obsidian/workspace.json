@@ -1,0 +1,184 @@
+{
+  "main": {
+    "id": "f2ee976bd7656c39",
+    "type": "split",
+    "children": [
+      {
+        "id": "f913e4e581b2eecb",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c309a9e47e1de164",
+            "type": "leaf",
+            "state": {
+              "type": "empty",
+              "state": {},
+              "icon": "lucide-file",
+              "title": "Nova aba"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "8a3cfc477e9f0687",
+    "type": "split",
+    "children": [
+      {
+        "id": "3a307a5f14746408",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "8a03d8b63773fcbc",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical",
+                "autoReveal": false
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Explorador de arquivos"
+            }
+          },
+          {
+            "id": "396ab8ae0c4b173e",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Procurar"
+            }
+          },
+          {
+            "id": "635a566aa6d40ab0",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Marcadores"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "c7c0493be08f16f4",
+    "type": "split",
+    "children": [
+      {
+        "id": "6a1f4721354a6a53",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2cde94a8ad8e9650",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "Livros/Algoritmos - Teoria e Prática/Cap 1/Cap 1.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Links inversos para Cap 1"
+            }
+          },
+          {
+            "id": "05489aedd44a9886",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "file": "Livros/Algoritmos - Teoria e Prática/Cap 1/Cap 1.md",
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Links de saída para Cap 1"
+            }
+          },
+          {
+            "id": "b4a7bb7103c4f71b",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "2a6e92ffa9d6b202",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {
+                "file": "Livros/Algoritmos - Teoria e Prática/Cap 1/Cap 1.md",
+                "followCursor": false,
+                "showSearch": false,
+                "searchQuery": ""
+              },
+              "icon": "lucide-list",
+              "title": "Sumário de Cap 1"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Abrir a troca rápida": false,
+      "graph:Abrir visualização em gráfico": false,
+      "canvas:Criar novo canvas": false,
+      "daily-notes:Abrir a nota de hoje": false,
+      "templates:Inserir modelo": false,
+      "command-palette:Abrir paleta de comandos": false,
+      "obsidian-excalidraw-plugin:New drawing": false
+    }
+  },
+  "active": "8a03d8b63773fcbc",
+  "lastOpenFiles": [
+    "Livros/Algoritmos - Teoria e Prática/Cap 2/Cap 2.md",
+    "Livros/Algoritmos - Teoria e Prática/Cap 2/Exercícios.md",
+    "Livros/Algoritmos - Teoria e Prática/Cap 2",
+    "Livros/Algoritmos - Teoria e Prática/Cap 1/Exercícios.md",
+    "Anotações/Algoritmo de Bellman-Ford.md",
+    "Anotações/Algoritmo de Dijkstra.md",
+    "Livros/Algoritmos - Teoria e Prática/Cap 1/Cap 1.md",
+    "Anotações/grafo.md",
+    "Anotações/Grafos.md",
+    "Anotações/envoltória convexa.md",
+    "Imagens",
+    "Anotações",
+    "Anotacoes"
+  ]
+}
