@@ -1,0 +1,1 @@
+Link: https://leetcode.com/problems/find-the-count-of-good-integers/?envType=daily-question&envId=2025-04-12
