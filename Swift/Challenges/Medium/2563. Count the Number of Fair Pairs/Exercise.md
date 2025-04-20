@@ -1,0 +1,1 @@
+Link: https://leetcode.com/problems/count-the-number-of-fair-pairs/submissions/1612831842/?envType=daily-question&envId=2025-04-19
