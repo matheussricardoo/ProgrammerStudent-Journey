@@ -1,0 +1,1 @@
+Link: https://leetcode.com/problems/count-the-number-of-ideal-arrays/?envType=daily-question&envId=2025-04-22
