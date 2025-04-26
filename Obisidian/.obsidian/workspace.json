@@ -11,14 +11,10 @@
             "id": "c309a9e47e1de164",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "Livros/A Linguagem de Programação Go/Cap 1/Tutorial.md",
-                "mode": "source",
-                "source": false
-              },
+              "type": "empty",
+              "state": {},
               "icon": "lucide-file",
-              "title": "Tutorial"
+              "title": "Nova aba"
             }
           }
         ]
@@ -165,27 +161,47 @@
       "canvas:Criar novo canvas": false,
       "daily-notes:Abrir a nota de hoje": false,
       "templates:Inserir modelo": false,
-      "command-palette:Abrir paleta de comandos": false
+      "command-palette:Abrir paleta de comandos": false,
+      "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "c309a9e47e1de164",
+  "active": "8a03d8b63773fcbc",
   "lastOpenFiles": [
+    "Books/Introduction to Algorithms/Chapter 2/Exercícios.md",
+    "Books/Introduction to Algorithms/Chapter 2/Cap 2.md",
+    "Books/Introduction to Algorithms/Chapter 2",
+    "Books/Introduction to Algorithms/Chapter 1/Exercícios.md",
+    "Books/Introduction to Algorithms/Chapter 1/Cap 1.md",
+    "Books/Introduction to Algorithms/Chapter 1",
+    "Books/Introduction to Algorithms/Cap 2/Exercícios.md",
+    "Books/Introduction to Algorithms/Cap 2/Cap 2.md",
+    "Books/Introduction to Algorithms/Cap 1/Exercícios.md",
+    "Books/Introduction to Algorithms/Cap 1/Cap 1.md",
+    "Books/Introduction to Algorithms/Cap 2",
+    "Books/Introduction to Algorithms/Cap 1",
+    "Books/Introduction to Algorithms",
+    "Notes/grafo.md",
+    "Notes/envoltória convexa.md",
+    "Notes/Algoritmo de Dijkstra.md",
+    "Notes/Algoritmo de Bellman-Ford.md",
+    "Notes",
     "Livros/A Linguagem de Programação Go/Cap 1/Tutorial.md",
-    "Livros/A Linguagem de Programação Go/Cap 1",
-    "Livros/A Linguagem de Programação Go",
+    "Books/Algoritmos - Teoria e Prática/Cap 2/Exercícios.md",
+    "Books/Algoritmos - Teoria e Prática/Cap 2/Cap 2.md",
+    "Books/Algoritmos - Teoria e Prática/Cap 1/Exercícios.md",
+    "Books/Algoritmos - Teoria e Prática/Cap 1/Cap 1.md",
+    "Books/Go Programming Language, The (Addison-Wesley Professional Computing Series)/Cap 1/Tutorial.md",
+    "Books/Algoritmos - Teoria e Prática/Cap 2",
+    "Books/Algoritmos - Teoria e Prática/Cap 1",
+    "Books/Go Programming Language, The (Addison-Wesley Professional Computing Series)/Cap 1",
+    "Books/Algoritmos - Teoria e Prática",
     "Dados.md",
     "Livros/Algoritmos - Teoria e Prática/Cap 2/Cap 2.md",
     "Livros/Algoritmos - Teoria e Prática/Cap 2/Exercícios.md",
-    "Livros/Algoritmos - Teoria e Prática/Cap 2",
     "Livros/Algoritmos - Teoria e Prática/Cap 1/Exercícios.md",
     "Anotações/Algoritmo de Bellman-Ford.md",
     "Anotações/Algoritmo de Dijkstra.md",
     "Livros/Algoritmos - Teoria e Prática/Cap 1/Cap 1.md",
-    "Anotações/grafo.md",
-    "Anotações/Grafos.md",
-    "Anotações/envoltória convexa.md",
-    "Imagens",
-    "Anotações",
-    "Anotacoes"
+    "Anotações/grafo.md"
   ]
 }
