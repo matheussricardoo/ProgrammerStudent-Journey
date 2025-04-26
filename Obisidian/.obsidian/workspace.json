@@ -165,8 +165,7 @@
       "canvas:Criar novo canvas": false,
       "daily-notes:Abrir a nota de hoje": false,
       "templates:Inserir modelo": false,
-      "command-palette:Abrir paleta de comandos": false,
-      "obsidian-excalidraw-plugin:New drawing": false
+      "command-palette:Abrir paleta de comandos": false
     }
   },
   "active": "c309a9e47e1de164",
