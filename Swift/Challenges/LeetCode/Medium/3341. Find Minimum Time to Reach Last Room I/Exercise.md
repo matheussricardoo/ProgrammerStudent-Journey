@@ -1,0 +1,1 @@
+Link: https://leetcode.com/problems/find-minimum-time-to-reach-last-room-i/
