@@ -1,0 +1,1 @@
+Link: https://leetcode.com/problems/three-consecutive-odds/description/?envType=daily-question&envId=2025-05-11
