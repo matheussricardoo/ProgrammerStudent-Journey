@@ -11,10 +11,14 @@
             "id": "8f73e77357a5525c",
             "type": "leaf",
             "state": {
-              "type": "empty",
-              "state": {},
+              "type": "markdown",
+              "state": {
+                "file": "Books/Go/Head First Go/Cap 1/Rodando meu primeiro progama.md",
+                "mode": "source",
+                "source": false
+              },
               "icon": "lucide-file",
-              "title": "Nova aba"
+              "title": "Rodando meu primeiro progama"
             }
           }
         ]
@@ -165,11 +169,12 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8a03d8b63773fcbc",
+  "active": "8f73e77357a5525c",
   "lastOpenFiles": [
+    "Books/Go/Go Programming Language, The (Addison-Wesley Professional Computing Series)/Cap 1/Tutorial.md",
+    "Books/Go/Head First Go/Cap 1/Rodando meu primeiro progama.md",
     "Books/Go/Head First Go/Cap 1",
     "Books/Go/Head First Go/Sem título.md",
-    "Books/Go/Go Programming Language, The (Addison-Wesley Professional Computing Series)/Cap 1/Tutorial.md",
     "Books/Go/Head First Go",
     "Books/Algorithgms",
     "Books/Go",
@@ -188,7 +193,6 @@
     "Anotações/Algoritmo de Bellman-Ford.md",
     "Anotações",
     "Livros/A Linguagem de Programação Go/Cap 1/Tutorial.md",
-    "Livros/A Linguagem de Programação Go/Cap 1",
     "Books/Algorithgms/Introduction to Algorithms/Chapter 2/Exercícios.md",
     "Books/Algorithgms/Introduction to Algorithms/Chapter 2/Cap 2.md",
     "Books/Algorithgms/Introduction to Algorithms/Chapter 1/Exercícios.md",
