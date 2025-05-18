@@ -1,0 +1,1 @@
+Link: https://leetcode.com/problems/painting-a-grid-with-three-different-colors/?envType=daily-question&envId=2025-05-18

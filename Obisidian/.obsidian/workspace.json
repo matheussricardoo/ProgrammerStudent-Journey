@@ -169,10 +169,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8f73e77357a5525c",
+  "active": "8a03d8b63773fcbc",
   "lastOpenFiles": [
-    "Books/Go/Go Programming Language, The (Addison-Wesley Professional Computing Series)/Cap 1/Tutorial.md",
+    "Notes/Estudo",
+    "Notes/Algorithms",
+    "Algorithmos",
+    "Books/Go/Head First Go/Cap 1/a.md",
     "Books/Go/Head First Go/Cap 1/Rodando meu primeiro progama.md",
+    "Books/Go/Go Programming Language, The (Addison-Wesley Professional Computing Series)/Cap 1/Tutorial.md",
     "Books/Go/Head First Go/Cap 1",
     "Books/Go/Head First Go/Sem título.md",
     "Books/Go/Head First Go",
@@ -186,12 +190,10 @@
     "Livros/Algoritmos - Teoria e Prática/Cap 1",
     "Livros/Algoritmos - Teoria e Prática",
     "Livros/A Linguagem de Programação Go",
-    "Livros",
     "Anotações/grafo.md",
     "Anotações/envoltória convexa.md",
     "Anotações/Algoritmo de Dijkstra.md",
     "Anotações/Algoritmo de Bellman-Ford.md",
-    "Anotações",
     "Livros/A Linguagem de Programação Go/Cap 1/Tutorial.md",
     "Books/Algorithgms/Introduction to Algorithms/Chapter 2/Exercícios.md",
     "Books/Algorithgms/Introduction to Algorithms/Chapter 2/Cap 2.md",
@@ -201,11 +203,9 @@
     "Books/Introduction to Algorithms/Cap 2/Cap 2.md",
     "Books/Introduction to Algorithms/Cap 1/Exercícios.md",
     "Books/Introduction to Algorithms/Cap 1/Cap 1.md",
-    "Notes/grafo.md",
-    "Notes/envoltória convexa.md",
-    "Notes/Algoritmo de Dijkstra.md",
-    "Notes/Algoritmo de Bellman-Ford.md",
-    "Books/Algoritmos - Teoria e Prática/Cap 2/Exercícios.md",
-    "Books/Algoritmos - Teoria e Prática/Cap 2/Cap 2.md"
+    "Notes/Algorithms/grafo.md",
+    "Notes/Algorithms/envoltória convexa.md",
+    "Notes/Algorithms/Algoritmo de Dijkstra.md",
+    "Notes/Algorithms/Algoritmo de Bellman-Ford.md"
   ]
 }
