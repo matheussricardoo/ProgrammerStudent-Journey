@@ -1,0 +1,1 @@
+Link: https://leetcode.com/problems/type-of-triangle/description/?envType=daily-question&envId=2025-05-19
