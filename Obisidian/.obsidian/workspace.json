@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Swift/@MainActor & actor/@MainActor & actor.md",
+                "file": "Programming/Swift/Protocolos/Protocolos.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "@MainActor & actor"
+              "title": "Protocolos"
             }
           }
         ]
@@ -171,8 +171,12 @@
   },
   "active": "e3a048d57a386a02",
   "lastOpenFiles": [
-    "Programming/Swift/Property Wrappers/Property Wrappers.md",
+    "Programming/Swift/Core Data/Core Data.md",
+    "Programming/Swift/Protocolos/Protocolos.md",
+    "Programming/Swift/Protocolos",
     "Programming/Swift/@MainActor & actor/@MainActor & actor.md",
+    "Programming/Swift/Core Data",
+    "Programming/Swift/Property Wrappers/Property Wrappers.md",
     "Programming/Swift/@MainActor & actor",
     "Programming/Swift/Async & Await/Async & Await.md",
     "Programming/Swift/Property Wrappers",
@@ -185,8 +189,6 @@
     "Books/Go/Head First Go/Cap 1/Rodando meu primeiro progama.md",
     "Programming/Go",
     "Programming",
-    "Notes/Estudo",
-    "Notes/Algorithms",
     "Books/Go/Head First Go/Cap 1/a.md",
     "Books/Go/Go Programming Language, The (Addison-Wesley Professional Computing Series)/Cap 1/Tutorial.md",
     "Books/Go/Head First Go/Sem título.md",
@@ -204,8 +206,6 @@
     "Books/Algorithgms/Introduction to Algorithms/Chapter 1/Exercícios.md",
     "Books/Algorithgms/Introduction to Algorithms/Chapter 1/Cap 1.md",
     "Books/Introduction to Algorithms/Cap 2/Exercícios.md",
-    "Books/Introduction to Algorithms/Cap 2/Cap 2.md",
-    "Books/Introduction to Algorithms/Cap 1/Exercícios.md",
-    "Books/Introduction to Algorithms/Cap 1/Cap 1.md"
+    "Books/Introduction to Algorithms/Cap 2/Cap 2.md"
   ]
 }
