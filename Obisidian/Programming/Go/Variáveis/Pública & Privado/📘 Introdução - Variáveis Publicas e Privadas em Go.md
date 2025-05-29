@@ -11,9 +11,8 @@ Suponha que você tenha um pacote chamado `utils`:
 
 **Arquivo `utils/helpers.go`:**
 
-Go
 
-```
+```Go
 package utils
 
 import "fmt"
@@ -68,9 +67,8 @@ Agora, vamos tentar usar este pacote `utils` em um pacote `main`:
 
 **Arquivo `main.go` (em um diretório diferente, que importa `utils`):**
 
-Go
 
-```
+```Go
 package main
 
 import (
