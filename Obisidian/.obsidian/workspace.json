@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Go/Variáveis/Pública & Privado/📘 Introdução - Variáveis Publicas e Privadas em Go.md",
+                "file": "Programming/Go/Package/A convenção sobre nomes de pacotes e diretórios..md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "📘 Introdução - Variáveis Publicas e Privadas em Go"
+              "title": "A convenção sobre nomes de pacotes e diretórios."
             }
           }
         ]
@@ -169,11 +169,14 @@
       "obsidian-excalidraw-plugin:New drawing": false
     }
   },
-  "active": "8a03d8b63773fcbc",
+  "active": "e3a048d57a386a02",
   "lastOpenFiles": [
-    "Programming/Go/Variáveis/Pública & Privado",
+    "Programming/Go/Variáveis/📘 Introdução - Operador de declaração curta.md",
+    "Programming/Go/Package/A convenção sobre nomes de pacotes e diretórios..md",
     "Programming/Go/Variáveis/📘 Introdução - Variáveis em Go.md",
     "Programming/Go/Variáveis/Pública & Privado/📘 Introdução - Variáveis Publicas e Privadas em Go.md",
+    "Programming/Go/Package",
+    "Programming/Go/Variáveis/Pública & Privado",
     "Programming/Swift/Protocolos/Protocolos.md",
     "Programming/Swift/Core Data/Core Data.md",
     "Programming/Swift/Protocolos",
@@ -189,8 +192,6 @@
     "Programming/Swift/Task",
     "Programming/Swift",
     "Books/Go/Head First Go/Cap 1/Rodando meu primeiro progama.md",
-    "Programming/Go",
-    "Programming",
     "Books/Go/Head First Go/Cap 1/a.md",
     "Books/Go/Go Programming Language, The (Addison-Wesley Professional Computing Series)/Cap 1/Tutorial.md",
     "Books/Go/Head First Go/Sem título.md",
@@ -205,7 +206,6 @@
     "Livros/A Linguagem de Programação Go/Cap 1/Tutorial.md",
     "Books/Algorithgms/Introduction to Algorithms/Chapter 2/Exercícios.md",
     "Books/Algorithgms/Introduction to Algorithms/Chapter 2/Cap 2.md",
-    "Books/Algorithgms/Introduction to Algorithms/Chapter 1/Exercícios.md",
-    "Books/Algorithgms/Introduction to Algorithms/Chapter 1/Cap 1.md"
+    "Books/Algorithgms/Introduction to Algorithms/Chapter 1/Exercícios.md"
   ]
 }
