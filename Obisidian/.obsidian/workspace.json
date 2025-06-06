@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Go/Library/fmt.md",
+                "file": "Programming/Swift/@ViewBuilder/@ViewBuilder.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "fmt"
+              "title": "@ViewBuilder"
             }
           }
         ]
@@ -171,8 +171,11 @@
   },
   "active": "e3a048d57a386a02",
   "lastOpenFiles": [
-    "Programming/Go/Package/A convenção sobre nomes de pacotes e diretórios..md",
+    "Programming/Swift/Untitled.md",
+    "Programming/Swift/@ViewBuilder/@ViewBuilder.md",
+    "Programming/Swift/@ViewBuilder",
     "Programming/Go/Library/fmt.md",
+    "Programming/Go/Package/A convenção sobre nomes de pacotes e diretórios..md",
     "Programming/Go/Library",
     "Programming/Go/Variáveis/📘 Introdução - Operador de declaração curta.md",
     "Programming/Go/Variáveis/📘 Introdução - Variáveis em Go.md",
@@ -191,7 +194,6 @@
     "Programming/Go/Variáveis",
     "Programming/Swift/Task/Task.md",
     "Programming/Swift/Async & Await",
-    "Programming/Swift/Task",
     "Books/Go/Head First Go/Cap 1/Rodando meu primeiro progama.md",
     "Books/Go/Head First Go/Cap 1/a.md",
     "Books/Go/Go Programming Language, The (Addison-Wesley Professional Computing Series)/Cap 1/Tutorial.md",
@@ -204,8 +206,6 @@
     "Anotações/envoltória convexa.md",
     "Anotações/Algoritmo de Dijkstra.md",
     "Anotações/Algoritmo de Bellman-Ford.md",
-    "Livros/A Linguagem de Programação Go/Cap 1/Tutorial.md",
-    "Books/Algorithgms/Introduction to Algorithms/Chapter 2/Exercícios.md",
-    "Books/Algorithgms/Introduction to Algorithms/Chapter 2/Cap 2.md"
+    "Livros/A Linguagem de Programação Go/Cap 1/Tutorial.md"
   ]
 }
