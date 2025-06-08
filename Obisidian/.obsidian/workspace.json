@@ -13,12 +13,12 @@
             "state": {
               "type": "markdown",
               "state": {
-                "file": "Programming/Swift/@ViewBuilder/@ViewBuilder.md",
+                "file": "Programming/Swift/Closures/Closure.md",
                 "mode": "source",
                 "source": false
               },
               "icon": "lucide-file",
-              "title": "@ViewBuilder"
+              "title": "Closure"
             }
           }
         ]
@@ -171,8 +171,12 @@
   },
   "active": "e3a048d57a386a02",
   "lastOpenFiles": [
-    "Programming/Swift/Untitled.md",
+    "Programming/Swift/$0/$0.md",
+    "Programming/Swift/Closures/Closure.md",
+    "Programming/Swift/$0",
     "Programming/Swift/@ViewBuilder/@ViewBuilder.md",
+    "Programming/Swift/Closures",
+    "Programming/Swift/Untitled.md",
     "Programming/Swift/@ViewBuilder",
     "Programming/Go/Library/fmt.md",
     "Programming/Go/Package/A convenção sobre nomes de pacotes e diretórios..md",
@@ -191,9 +195,7 @@
     "Programming/Swift/@MainActor & actor",
     "Programming/Swift/Async & Await/Async & Await.md",
     "Programming/Swift/Property Wrappers",
-    "Programming/Go/Variáveis",
     "Programming/Swift/Task/Task.md",
-    "Programming/Swift/Async & Await",
     "Books/Go/Head First Go/Cap 1/Rodando meu primeiro progama.md",
     "Books/Go/Head First Go/Cap 1/a.md",
     "Books/Go/Go Programming Language, The (Addison-Wesley Professional Computing Series)/Cap 1/Tutorial.md",
@@ -204,8 +206,6 @@
     "Livros/Algoritmos - Teoria e Prática/Cap 1/Cap 1.md",
     "Anotações/grafo.md",
     "Anotações/envoltória convexa.md",
-    "Anotações/Algoritmo de Dijkstra.md",
-    "Anotações/Algoritmo de Bellman-Ford.md",
-    "Livros/A Linguagem de Programação Go/Cap 1/Tutorial.md"
+    "Anotações/Algoritmo de Dijkstra.md"
   ]
 }
